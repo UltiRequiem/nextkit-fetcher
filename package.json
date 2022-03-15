@@ -1,0 +1,21 @@
+{
+  "name": "nextkit-fetcher",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Eliaz Bobadilla (a.k.a UltiRequiem)",
+  "license": "MIT",
+  "dependencies": {
+    "nextkit": "^3.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}
