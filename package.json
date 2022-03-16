@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build": "tsup index.ts --format esm --dts",
-    "docs": "typedoc .",
+    "build:docs": "typedoc .",
     "test": "xo",
     "fix": "xo --fix"
   },
