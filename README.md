@@ -34,13 +34,13 @@ const Index: NextPage<Props> = (props) => {
 
 If it fails it wil throw a `NextkitClientError`.
 
-Check the full API on 👇
+Check the full API on 📖
 
 https://nextkit-fetcher.js.org
 
 ## Extra
 
-If you are not a fan of adding dependencies, copy-paste this
+If you are not a fan of adding dependencies, copy-paste this 👇
 
 ```ts
 import { NextkitClientError } from "nextkit/client";
