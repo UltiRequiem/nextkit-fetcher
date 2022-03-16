@@ -7,8 +7,9 @@
   "files": [
     "dist/**"
   ],
+  "type": "module",
   "scripts": {
-    "build": "tsc"
+    "build": "tsup index.ts --format esm --dts --minify"
   },
   "author": "Eliaz Bobadilla (a.k.a UltiRequiem)",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "nextkit": "^3.1.0"
   },
   "devDependencies": {
+    "tsup": "^5.12.1",
     "typescript": "^4.6.2"
   }
 }

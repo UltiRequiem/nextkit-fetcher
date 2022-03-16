@@ -1,5 +1,6 @@
-import { APIResponse } from "nextkit";
 import { NextkitClientError } from "nextkit/client";
+
+import type { APIResponse } from "nextkit";
 
 export async function fetcher<T>(url: string, options?: RequestInit) {
   const request = await fetch(url, options);
