@@ -1,15 +1,23 @@
-import { NextkitClientError } from "nextkit/client";
+/* eslint-disable import/no-unassigned-import */
+import 'next';
+import 'next/image-types/global';
 
-import type { APIResponse } from "nextkit";
+import {NextkitClientError} from 'nextkit/client';
+
+import type {APIResponse} from 'nextkit';
 
 export async function fetcher<T>(url: string, options?: RequestInit) {
-  const request = await fetch(url, options);
+	const request = await fetch(url, options);
 
-  const body = (await request.json()) as APIResponse<T>;
+	if (request.status >= 400) {
+		throw new NextkitClientError(request.status, 'Error While Fetching');
+	}
 
-  if (!body.success) {
-    throw new NextkitClientError(request.status, body.message);
-  }
+	const body = (await request.json()) as APIResponse<T>;
 
-  return body.data;
+	if (!body.success) {
+		throw new NextkitClientError(request.status, body.message);
+	}
+
+	return body.data;
 }
