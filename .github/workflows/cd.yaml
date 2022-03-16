@@ -14,7 +14,7 @@ jobs:
         run: |
           npm install
           npm run build:docs
-          echo read-from-fs.js.org >> docs/CNAME
+          echo nextkit-fetcher.js.org >> docs/CNAME
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
