@@ -12,7 +12,9 @@ import type {APIResponse} from 'nextkit';
  @example
  ```ts
  import useSWR from "swr";
- import { fetcher } from "nextkit-fetcher";
+ import {fetcher} from "nextkit-fetcher";
+
+ import type {NextPage} from "next";
 
  const Index: NextPage<Props> = (props) => {
    const { data } = useSWR("/api/user", fetcher);
