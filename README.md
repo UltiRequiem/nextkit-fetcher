@@ -73,6 +73,8 @@ If you want to hurry me up a bit
 
 Consider [supporting me on Patreon](https://patreon.com/UltiRequiem) if you like my work 🚀
 
+Don't forget to start the repo ⭐
+
 ## Licence
 
 Licensed under the MIT License.

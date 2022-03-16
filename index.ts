@@ -7,6 +7,7 @@ import {NextkitClientError} from 'nextkit/client';
 import type {APIResponse} from 'nextkit';
 
 /**
+ Simple and type-safe fetcher for Nextkit
 
  @example
  ```ts
