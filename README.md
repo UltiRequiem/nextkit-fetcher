@@ -8,13 +8,13 @@ A simple and type-safe fetcher for [nextkit](https://github.com/alii/nextkit).
 
 ```sh
 # npm
-npm install read-from-fs
+npm install nextkit-fetcher
 
 # yarn
-yarn add read-from-fs
+yarn add nextkit-fetcher
 
 # pnpm
-pnpm add read-from-fs
+pnpm add nextkit-fetcher
 ```
 
 ## Usage
